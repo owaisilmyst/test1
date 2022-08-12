@@ -505,7 +505,7 @@ const Homepage: NextPage = () => {
                       src="unsplashrlwe8f8anoc@2x.png"
                     />
                     <div className={styles.stayDetailsDiv}>
-                      <div className={styles.titleContainerDiv}>
+                      <div className={styles.frameDiv12}>
                         <div className={styles.entireBungalowDiv}>
                           Entire bungalow
                         </div>
@@ -544,7 +544,7 @@ const Homepage: NextPage = () => {
                       src="unsplashtsn8bpopveo@2x.png"
                     />
                     <div className={styles.stayDetailsDiv1}>
-                      <div className={styles.titleContainerDiv}>
+                      <div className={styles.frameDiv12}>
                         <div className={styles.entireBungalowDiv}>
                           2-Story beachfront suite
                         </div>
@@ -578,11 +578,11 @@ const Homepage: NextPage = () => {
                       src="unsplashrlwe8f8anoc1@2x.png"
                     />
                     <div className={styles.stayDetailsDiv1}>
-                      <div className={styles.titleContainerDiv}>
+                      <div className={styles.frameDiv12}>
                         <div className={styles.entireBungalowDiv}>
                           Single deluxe hut
                         </div>
-                        <b className={styles.arcticHutB}>Arctic Hut </b>
+                        <b className={styles.arcticHutB}>{`Arctic Hut `}</b>
                         <div className={styles.nightDiv}>$420/night</div>
                       </div>
                     </div>
@@ -610,7 +610,7 @@ const Homepage: NextPage = () => {
                       src="unsplashyqrybvxug5q@2x.png"
                     />
                     <div className={styles.stayDetailsDiv}>
-                      <div className={styles.titleContainerDiv}>
+                      <div className={styles.frameDiv12}>
                         <div className={styles.entireBungalowDiv}>
                           Deluxe King Room
                         </div>
