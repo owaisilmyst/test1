@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+.popup-overlay {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.this-container-scales-with-bro {
+  position: relative;
+  display: inline-block;
+}
+.fixed-width-p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.fill-height-p {
+  margin: 0;
+}
+.fixed-width-fill-height {
+  position: absolute;
+  top: 86px;
+  left: 45px;
+  display: inline-block;
+}
+.frame-div102 {
+  align-self: stretch;
+  position: relative;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  width: 152px;
+}
+.fill-width-hug-height-with-so {
+  flex: 1;
+  position: relative;
+  display: inline-block;
+}
+.frame-div103 {
+  flex: 1;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.fixed-width-fixed-height {
+  position: absolute;
+  top: 97px;
+  left: 29px;
+  display: inline-block;
+}
+.frame-div104 {
+  position: relative;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  width: 123px;
+  height: 223px;
+}
+.frame-div101 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.frame-div100,
+.rectangle-div30 {
+  align-self: stretch;
+  position: relative;
+}
+.frame-div100 {
+  border: 1px solid #000;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 17px 19px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.rectangle-div30 {
+  background-color: #c4c4c4;
+  height: 293px;
+}
+.frame-div107 {
+  flex: 1;
+  flex-direction: column;
+  gap: 10px;
+}
+.br-auto-layout,
+.frame-div106,
+.frame-div107,
+.frame-div113 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frame-div106 {
+  align-self: stretch;
+  flex-direction: row;
+  gap: 32px;
+}
+.br-auto-layout,
+.frame-div113 {
+  flex-direction: column;
+  gap: 10px;
+}
+.frame-div113 {
+  flex: 1;
+}
+.br-auto-layout {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  overflow: hidden;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: 12px;
+  color: #000;
+  font-family: Roboto;
+}
+@media screen and (max-width: 1199px) {
+  .frame-div107 {
+    flex: unset;
+    align-self: stretch;
+  }
+  .frame-div106 {
+    flex-direction: column;
+  }
+  .frame-div113 {
+    width: 100%;
+    flex: unset;
+    align-self: stretch;
+  }
+}

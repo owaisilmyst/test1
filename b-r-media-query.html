@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <title></title>
+    <meta name="description" content="" />
+
+    <link rel="stylesheet" href="./b-r-media-query.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=GRAVIS PERSONAL USE:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=ABeeZee:ital,wght@1,400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Impact:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Gravitas One:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=BM HANNA_TTF:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto Slab:wght@800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=SF Pro Text:wght@400;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=SF Pro Display:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Abhaya Libre:wght@700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Anonymous Pro:ital,wght@1,400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Prociono:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Puritan:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="br-media-query">
+      <div class="rectangle-div29" data-animate-on-scroll></div>
+      <div class="this-square-1199w-red-767">
+        <p class="this-square-p">This square:</p>
+        <p class="this-square-p">< 1199w: red</p>
+        <p class="this-square-p"><767w: green</p>
+        <p class="this-square-p"><427w: blue</p>
+        <p class="this-square-p"><350w:grey again</p>
+        <p class="this-square-p"><250w: yellow</p>
+        <p class="this-square-p">&nbsp;</p>
+        <p class="this-square-p"><250w AND 250h = pop-out</p>
+        <p class="this-square-p"><150w OR 150h = bounce</p>
+        <p class="this-square-p">&nbsp;</p>
+        <p class="this-square-p">>1500w & landscape = circle</p>
+        <p class="this-square-p">>1500w & portrait = Diamond</p>
+      </div>
+    </div>
+
+    <script>
+      const scrollAnimElements = document.querySelectorAll('[data-animate-on-scroll]');
+        const observer = new IntersectionObserver((entries) => {
+          for(const entry of entries) {
+            if (entry.isIntersecting || entry.intersectionRatio > 0) {
+              const targetElement = entry.target;
+              targetElement.classList.add("animate");
+              observer.unobserve(targetElement);
+            }
+          }
+        }, {
+          threshold: 0.15,
+        });
+
+        for (let i = 0; i < scrollAnimElements.length; i++) {
+          observer.observe(scrollAnimElements[i]);
+        }
+    </script>
+  </body>
+</html>
