@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import Head from "next/head";
 import { ThemeProvider, createTheme } from "@mui/material";
 import CssBaseline from "@mui/material/CssBaseline";
+import "../styles/global.css";
 
 export default function MyApp(props: any) {
   const { Component, pageProps } = props;
@@ -30,7 +31,7 @@ export default function MyApp(props: any) {
   return (
     <React.Fragment>
       <Head>
-        <title>My page</title>
+        <title>test next</title>
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"
