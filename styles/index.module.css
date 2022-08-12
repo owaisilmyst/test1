@@ -17,9 +17,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
-}
-.navigationMenuDiv > * + * {
-  margin-left: 30px;
+  gap: 30px;
 }
 .hamburgerMenuIcon {
   display: none;
@@ -42,19 +40,13 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-}
-.accountSectionDiv > * + * {
-  margin-left: 12px;
+  gap: 12px;
 }
 .navigationRightDiv {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: flex-end;
+  gap: 36px;
 }
-.navigationRightDiv > * + * {
-  margin-left: 36px;
-}
+.navigationRightDiv,
 .topContainerDiv,
 .topHeader {
   display: flex;
@@ -112,16 +104,14 @@
   font-family: Roboto;
 }
 .titleDiv {
-  align-self: stretch;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  gap: 5px;
 }
-.titleDiv > * + * {
-  margin-top: 5px;
-}
-.departureFieldAutocomplete {
+.departureFieldAutocomplete,
+.titleDiv {
   align-self: stretch;
 }
 .inputGroupDiv {
@@ -201,9 +191,7 @@
   box-sizing: border-box;
   align-items: center;
   justify-content: center;
-}
-.searchContainerDiv > * + * {
-  margin-top: 43px;
+  gap: 43px;
 }
 .searchSectionDiv {
   align-self: stretch;
@@ -344,9 +332,7 @@
   padding: 20px;
   align-items: flex-start;
   justify-content: flex-start;
-}
-.flightMainContainer > * + * {
-  margin-top: 21px;
+  gap: 21px;
 }
 .lineSeparatorDiv {
   position: relative;
@@ -380,9 +366,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-.hotelButton > * + * {
-  margin-top: 8px;
+  gap: 8px;
 }
 .rectangleDiv {
   position: absolute;
@@ -498,47 +482,40 @@
   max-width: 100%;
   max-height: 100%;
 }
-.prepareMenuDiv,
-.tripMenusDiv {
-  display: flex;
-  align-items: flex-start;
-}
 .tripMenusDiv {
   align-self: stretch;
+  display: flex;
   flex-direction: row;
+  align-items: flex-start;
   justify-content: space-between;
+}
+.flightDetailsDiv,
+.prepareMenuDiv,
+.upcomingFlightSection {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 .prepareMenuDiv {
   flex: 1;
   flex-direction: column;
-  justify-content: flex-start;
+  gap: 20px;
   font-size: 18px;
   color: #cecece;
 }
-.prepareMenuDiv > * + * {
-  margin-top: 20px;
+.flightDetailsDiv,
+.upcomingFlightSection {
+  align-self: stretch;
 }
 .flightDetailsDiv {
-  align-self: stretch;
-  display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
+  gap: 36px;
   font-size: 24px;
   color: #1262ae;
 }
-.flightDetailsDiv > * + * {
-  margin-left: 36px;
-}
 .upcomingFlightSection {
-  align-self: stretch;
-  display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.upcomingFlightSection > * + * {
-  margin-top: 20px;
+  gap: 20px;
 }
 .mostPopularDestinations {
   align-self: stretch;
@@ -555,9 +532,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-}
-.titleContainerDiv > * + * {
-  margin-top: 6px;
+  gap: 6px;
 }
 .viewAllDestinations {
   position: relative;
@@ -567,27 +542,25 @@
   width: 197.33px;
   flex-shrink: 0;
 }
+.destinationsTitlesDiv,
+.viewAllTop {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
 .viewAllTop {
   text-decoration: none;
   border-radius: 31px;
   background-color: #fff;
   width: 231.38px;
-  display: flex;
-  flex-direction: row;
   align-items: flex-start;
-  justify-content: flex-start;
+  gap: 10px;
   text-align: right;
   color: inherit;
 }
-.viewAllTop > * + * {
-  margin-left: 10px;
-}
 .destinationsTitlesDiv {
   align-self: stretch;
-  display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
 }
 .unsplashnnzkZNYWHaUIcon {
   position: absolute;
@@ -748,29 +721,26 @@
   width: 197.33px;
   flex-shrink: 0;
 }
+.popDestinationsMain,
+.viewAllBottom {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
 .viewAllBottom {
   border-radius: 31px;
   background-color: #fff;
   width: 231.38px;
   display: none;
   flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
+  gap: 10px;
   text-align: right;
-}
-.viewAllBottom > * + * {
-  margin-left: 10px;
 }
 .popDestinationsMain {
   align-self: stretch;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+  gap: 24px;
   color: #1262ae;
-}
-.popDestinationsMain > * + * {
-  margin-top: 24px;
 }
 .recommendedHolidaysB,
 .viewAllHolidays {
@@ -787,28 +757,26 @@
   width: 165.89px;
   flex-shrink: 0;
 }
+.frameA,
+.recTitleDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
 .frameA {
   text-decoration: none;
   border-radius: 31px;
   background-color: #fff;
   width: 199.89px;
-  display: flex;
-  flex-direction: row;
   align-items: flex-start;
-  justify-content: flex-start;
+  gap: 10px;
   text-align: right;
   font-size: 18px;
   color: #1262ae;
 }
-.frameA > * + * {
-  margin-left: 10px;
-}
 .recTitleDiv {
   align-self: stretch;
-  display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
 }
 .unsplash5MV818tzxeoIcon {
   align-self: stretch;
@@ -842,9 +810,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-}
-.frameDiv5 > * + * {
-  margin-top: 3px;
+  gap: 3px;
 }
 .div4 {
   position: relative;
@@ -909,12 +875,10 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
+  gap: 10px;
   text-align: right;
   font-size: 18px;
   color: #1262ae;
-}
-.viewAllBottom1 > * + * {
-  margin-left: 10px;
 }
 .recommendedHolidaysContainer {
   align-self: stretch;
@@ -922,10 +886,8 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  gap: 24px;
   font-size: 30px;
-}
-.recommendedHolidaysContainer > * + * {
-  margin-top: 24px;
 }
 .popularStaysB {
   position: absolute;
@@ -957,22 +919,21 @@
   width: 140.66px;
   flex-shrink: 0;
 }
+.frameA1,
+.popularStaysHeader {
+  display: flex;
+  flex-direction: row;
+}
 .frameA1 {
   text-decoration: none;
   border-radius: 31px;
   background-color: #fff;
-  display: flex;
-  flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
-}
-.frameA1 > * + * {
-  margin-left: 10px;
+  gap: 10px;
 }
 .popularStaysHeader {
   align-self: stretch;
-  display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
 }
@@ -1010,6 +971,14 @@
 .nightDiv {
   font-size: 18px;
 }
+.frameDiv12 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 6px;
+}
 .videoIcon {
   position: relative;
   width: 25px;
@@ -1022,9 +991,7 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
-}
-.stayDetailsDiv > * + * {
-  margin-left: 11px;
+  gap: 11px;
 }
 .div8,
 .reviewsDiv {
@@ -1108,10 +1075,8 @@
   padding: 15px 13px;
   align-items: flex-start;
   justify-content: flex-start;
+  gap: 23px;
   width: 25%;
-}
-.hotelCardDiv > * + * {
-  margin-top: 23px;
 }
 .hotelCard4:hover,
 .hotelCard5:hover,
@@ -1148,10 +1113,8 @@
   position: relative;
   flex-direction: column;
   padding: 15px 13px;
+  gap: 23px;
   width: 25%;
-}
-.hotelCard > * + * {
-  margin-top: 23px;
 }
 .arcticHutB,
 .div10,
@@ -1202,25 +1165,7 @@
   width: 44.38px;
   height: 19px;
 }
-.hotelCard4 {
-  text-decoration: none;
-  flex: 1;
-  align-self: stretch;
-  border-radius: 10px;
-  background-color: #fff;
-  border: 1px solid #eaeaea;
-  box-sizing: border-box;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  padding: 15px 13px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  width: 25%;
-}
-.hotelCard4 > * + * {
-  margin-top: 23px;
-}
+.hotelCard4,
 .hotelCard5 {
   text-decoration: none;
   flex: 1;
@@ -1235,10 +1180,8 @@
   padding: 15px 13px;
   align-items: flex-start;
   justify-content: flex-start;
+  gap: 23px;
   width: 25%;
-}
-.hotelCard5 > * + * {
-  margin-top: 23px;
 }
 .hotelCard41,
 .hotelCardsDiv {
@@ -1280,34 +1223,28 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
+  gap: 10px;
 }
-.frameDiv16 > * + * {
-  margin-left: 10px;
+.homeContentsDiv,
+.popularStaysForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 .popularStaysForm {
   align-self: stretch;
-  display: flex;
-  flex-direction: column;
   align-items: flex-start;
-  justify-content: flex-start;
-}
-.popularStaysForm > * + * {
-  margin-top: 20px;
+  gap: 20px;
 }
 .homeContentsDiv {
   width: 100%;
-  display: flex;
-  flex-direction: column;
   padding: 0 80px;
   box-sizing: border-box;
   align-items: center;
-  justify-content: flex-start;
+  gap: 80px;
   max-width: 1280px;
   text-align: left;
   color: #303030;
-}
-.homeContentsDiv > * + * {
-  margin-top: 80px;
 }
 .rectangleIcon {
   position: absolute;
@@ -1332,9 +1269,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-}
-.formHeaderDiv > * + * {
-  margin-top: 7px;
+  gap: 7px;
 }
 .fillInYourDetailsToJoinT {
   align-self: stretch;
@@ -1364,9 +1299,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-}
-.formFieldsDiv > * + * {
-  margin-top: 10px;
+  gap: 10px;
 }
 .buttonDiv5 {
   position: relative;
@@ -1380,18 +1313,17 @@
   text-align: left;
   display: inline-block;
 }
+.button,
 .unstyledButtonDiv {
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.unstyledButtonDiv {
   padding: 8px 22px;
   box-sizing: border-box;
   align-items: flex-start;
   justify-content: flex-start;
-}
-.button,
-.form,
-.unstyledButtonDiv {
-  display: flex;
-  flex-direction: column;
 }
 .button {
   cursor: pointer;
@@ -1401,12 +1333,18 @@
   border-radius: 4px;
   width: 164px;
   height: 56px;
-  overflow: hidden;
   align-items: center;
   justify-content: center;
 }
 .button:hover {
   background-color: #99600a;
+}
+.form,
+.shareYourTravelsForm {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  justify-content: flex-start;
 }
 .form {
   align-self: stretch;
@@ -1414,31 +1352,21 @@
   background-color: #fff;
   box-shadow: 0 0 24px rgba(0, 0, 0, 0.03);
   border: 1px solid #eaeaea;
-  box-sizing: border-box;
   position: relative;
   padding: 28px 30px;
   align-items: flex-start;
-  justify-content: flex-start;
-}
-.form > * + * {
-  margin-top: 17px;
+  gap: 17px;
 }
 .shareYourTravelsForm {
   position: relative !important;
   top: 52px;
   left: auto !important;
   width: 549px;
-  display: flex;
-  flex-direction: column;
   padding: 20px;
-  box-sizing: border-box;
   align-items: center;
-  justify-content: flex-start;
+  gap: 30px;
   margin-left: auto;
   margin-right: auto;
-}
-.shareYourTravelsForm > * + * {
-  margin-top: 30px;
 }
 .frameDiv17 {
   align-self: stretch;
@@ -1464,10 +1392,8 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  gap: 14px;
   margin-bottom: 40px !important;
-}
-.fickleFlightBioDiv > * + * {
-  margin-top: 14px;
 }
 .lineDiv {
   position: relative;
@@ -1601,13 +1527,11 @@
   padding: 33px 84px;
   box-sizing: border-box;
   justify-content: flex-start;
+  gap: 44px;
   text-align: left;
   font-size: 18px;
   color: #fff;
   font-family: Roboto;
-}
-.footer > * + * {
-  margin-left: 44px;
 }
 .footerSectionDiv,
 .homepageDiv {
@@ -1626,13 +1550,11 @@
   width: 100%;
   overflow: hidden;
   align-items: center;
+  gap: 69px;
   text-align: center;
   font-size: 18px;
   color: #fff;
   font-family: Roboto;
-}
-.homepageDiv > * + * {
-  margin-top: 69px;
 }
 .homepageDiv:hover {
   background: linear-gradient(#fff, #fff), #87550a;
@@ -1677,6 +1599,8 @@
   }
   .inputsRowDiv {
     width: 100%;
+    flex: unset;
+    align-self: stretch;
   }
   .searchFlightsButton {
     margin-right: auto;
@@ -1706,13 +1630,11 @@
   }
   .prepareMenuDiv {
     width: 100%;
+    flex: unset;
+    align-self: stretch;
   }
   .flightDetailsDiv {
     flex-direction: column;
-  }
-  .flightDetailsDiv > * + * {
-    margin-top: 36px;
-    margin-left: 0;
   }
   .upcomingFlightSection {
     display: block;
@@ -1799,17 +1721,21 @@
     padding: 24px 0;
     box-sizing: border-box;
   }
+  .fickleFlightBioDiv {
+    flex: unset;
+    align-self: stretch;
+  }
   .lineDiv {
     display: none;
+  }
+  .footerLinksDiv {
+    flex: unset;
+    align-self: stretch;
   }
   .footer {
     flex-direction: column;
     padding: 40px 24px 30px;
     box-sizing: border-box;
-  }
-  .footer > * + * {
-    margin-top: 44px;
-    margin-left: 0;
   }
 }
 @media screen and (max-width: 427px) {
@@ -1822,6 +1748,8 @@
   }
   .inputGroupDiv {
     width: 100%;
+    flex: unset;
+    align-self: stretch;
   }
   .inputsRowDiv {
     flex-direction: column;
@@ -1845,6 +1773,10 @@
   }
   .mostPopularDestinations {
     font-size: 22px;
+  }
+  .titleContainerDiv {
+    flex: unset;
+    align-self: stretch;
   }
   .destinationsTitlesDiv {
     flex-direction: column;
@@ -1879,6 +1811,8 @@
   }
   .hotelCard1 {
     width: 100%;
+    flex: unset;
+    align-self: stretch;
   }
   .hotelCard {
     width: 100% !important;
@@ -1888,6 +1822,10 @@
   .hotelCard5 {
     display: flex;
     width: 100% !important;
+  }
+  .hotelCard41 {
+    flex: unset;
+    align-self: stretch;
   }
   .hotelCardsDiv {
     flex-direction: column;
